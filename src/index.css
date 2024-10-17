@@ -33,12 +33,14 @@
     align-items: center;
 }
 
-.check {
+.check,
+.reset {
     margin-right: 20px;
 }
 
 .check,
-.reset {
+.reset,
+.show-result {
     height: 40px;
     width: 60px;
 }

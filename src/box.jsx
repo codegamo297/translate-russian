@@ -29,7 +29,7 @@ function Box() {
                 gg dịch nên là phải dịch đúng từng chữ mới hiển thị kết quả đúng
             </p>
             <div className="subject-list">
-                {data.map((item, index) => (
+                {data.map((index) => (
                     <button
                         key={index}
                         className={

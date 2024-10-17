@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Form({ index, data, resetForm }) {
+function Form({ index, data }) {
     const [searchValue, setSearchValue] = useState("");
     const [showResult, setShowResult] = useState(false);
     const [isCheck, setIsCheck] = useState(null);
@@ -13,16 +13,18 @@ function Form({ index, data, resetForm }) {
         } else {
             setIsCheck(false);
         }
-
-        setShowResult(true);
     };
 
     const handleReset = (e) => {
         e.preventDefault();
-        // setIsCheck(null);
-        // setSearchValue("");
-        // setShowResult(false);
-        resetForm();
+        setIsCheck(null);
+        setSearchValue("");
+        setShowResult(false);
+    };
+
+    const handleResult = (e) => {
+        e.preventDefault();
+        setShowResult(true);
     };
 
     return (
@@ -46,6 +48,10 @@ function Form({ index, data, resetForm }) {
 
                 <button className="reset" onClick={handleReset}>
                     Làm lại
+                </button>
+
+                <button className="show-result" onClick={handleResult}>
+                    Kết quả
                 </button>
             </form>
 
