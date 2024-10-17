@@ -1,0 +1,63 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    padding: 30px;
+}
+
+.item {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.question {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.translate {
+    width: 80%;
+    height: 100px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.translate-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    margin-right: 20px;
+}
+
+.check,
+.reset {
+    height: 40px;
+    width: 60px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.subject-list {
+    display: flex;
+    gap: 30px;
+}
+
+.subject {
+    height: 30px;
+    width: 60px;
+    font-size: 16px;
+}
+
+.subject.active {
+    color: blue;
+}
